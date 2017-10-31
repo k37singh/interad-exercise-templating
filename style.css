@@ -1,0 +1,323 @@
+body{
+	display: flex;
+	max-width: 1024px;
+	margin:auto;
+	font-family: "Verdana";
+	font-size: 24px;
+}
+
+
+header {
+	display: block;
+	width: 100%;
+	padding: 15px 30px;
+	background-color: rgb(230,230,230);
+}
+#logo{
+	height: 70px;
+}
+
+
+#hero{
+	display: block;
+	width: 100%;
+	padding: 40px 30px 40px 30px;
+	background-color: rgb(210,210,210);
+}
+#heroText {
+	display:block;
+	width:100%;
+	margin:auto;
+  	font-size: 36px;
+  	color: rgb(102, 102, 102);
+  	font-weight: bold;
+  	text-align: center;
+}
+#creditCard{
+	display: block;
+	margin:auto;
+	padding-bottom: 24px;
+}
+
+
+#title{
+	display: inline-block;
+	width: 100%;
+	padding: 24px 30px;
+	background-color: rgb(230,230,230);
+	font-size: 30px;
+	word-wrap: break-word;
+  	color: rgb(68, 68, 68);
+  	line-height: 1.4;
+}
+
+
+#formDiv{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 0px 30px;
+	background-color: rgb(250,250,250);
+	overflow: hidden;
+}
+
+
+#flexContainer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.formField{
+	padding:24px 0px;
+}
+.formField label{
+	display: block;
+  	color: rgb(68, 68, 68);
+  	line-height: 1.333;
+  	margin-bottom: 20px;
+  	font-size: 24px;
+
+}
+.formField input{
+	display: block;
+	width:440px;
+	height:60px;
+	font-size: 18px;
+    color: rgb(170, 170, 170);
+    line-height: 2.667;
+    text-indent: 20px;
+}
+.formField i {
+	font-size: 19px;
+}
+#inputCC input{
+	display: inline-block;
+	width: 85px;
+	text-indent: 10px;
+
+}
+#inputCC label{
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+#inputCC{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+textarea{
+	display: block;
+	height: 120px;
+	width: 100%
+}
+
+
+#businessCardField{
+	display: flex;
+	flex-direction: row;
+	padding:24px 0px;
+}
+#businessCardField label{
+	font-size: 24px;
+	color: rgb(68, 68, 68);
+	padding-left: 15px
+}
+#redChkBox{
+	padding-top: 5px;
+}	
+input[type=checkbox] {
+display:none;
+}
+input[type=checkbox] + #businessCardLabel
+{
+	background: url(resources/CheckBox_Unchecked.png);
+	height: 22px;
+	width: 22px;
+	display:inline-block;
+	padding: 0px;
+}
+input[type=checkbox]:checked + #businessCardLabel
+{
+	background: url(resources/CheckBox_Checked.png);
+	height: 22px;
+	width: 22px;
+	display:inline-block;
+	padding: 0px;
+}
+
+
+#businessCardWorkFlow{
+	padding:24px 0px;
+}
+input[type=checkbox] + #businessOwnerConfirmationLabel
+{
+	background: url(resources/CheckBox_Unchecked.png);
+	height: 22px;
+	width: 22px;
+	display:inline-block;
+	padding: 0px;
+}
+input[type=checkbox]:checked + #businessOwnerConfirmationLabel
+{
+	background: url(resources/CheckBox_Checked_Blue.png);
+	height: 22px;
+	width: 22px;
+	display:block;
+	padding: 0px;
+}
+#blueChkBox{
+	padding-top: 5px;
+}
+#businessOwnerConfirmationField{
+	display: flex;
+	flex-direction: row;
+	padding-top: 20px;
+
+}
+#businessConditions{
+	padding-left: 15px;
+	font-size: 24px;
+	color: rgb(68, 68, 68);
+  	line-height: 1.333;
+}
+#businessConditions p {
+	font-size: 20px;
+	color: rgb(170, 170, 170);
+  	line-height: 1.3;
+}
+
+
+input[type=checkbox] + #rulesLabel
+{
+	background: url(resources/CheckBox_Unchecked.png);
+	height: 22px;
+	width: 22px;
+	display:inline-block;
+	padding: 0px;
+}
+input[type=checkbox]:checked + #rulesLabel
+{
+	background: url(resources/CheckBox_Checked.png);
+	height: 22px;
+	width: 22px;
+	display:block;
+	padding: 0px;
+}
+#rulesField{
+	display: flex;
+	flex-direction: row;
+	padding: 24px 0px;
+
+}
+#chkBox{
+	padding-top: 5px;
+}
+#rulesText{
+	padding-left: 15px;
+	font-size: 24px;
+	color: rgb(68, 68, 68);
+  	line-height: 1.333;
+}
+#rulesText p {
+	font-size: 20px;
+	color: rgb(170, 170, 170);
+  	line-height: 1.3;
+}
+
+
+#btnDiv{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	padding: 24px 0px;
+}
+button{
+	border-radius: 2px;
+  	background-color: rgb(208, 0, 0);
+  	box-shadow: 0px 1px 2.46px 0.54px rgba(136, 0, 0, 0.004);
+  	width: 308px;
+  	height: 60px;
+    font-size: 24px;
+  	color: rgb(255, 255, 255);
+  	line-height: 1;
+}
+
+
+footer{
+	display: block;
+	width: 100%;
+	padding: 15px 30px;
+		background-color: rgb(250,250,250);
+
+}
+
+
+.errorMessage{
+	display: flex;
+	flex-direction: row;
+	font-size: 28px;
+	font-family: "Arial";
+  	color: rgb(189, 0, 0);
+  	vertical-align:text-bottom;
+  	padding-top: 15px
+}
+.redBorder{
+	border-color: rgb(189, 0, 0);
+	border-style: solid;
+}
+.redText{
+	color: rgb(189, 0, 0)!important;
+}
+
+.blackText{
+	color: black;
+}
+
+hr{
+	border-width: 1px;
+ 	border-color: rgb(221, 221, 221);
+  	border-style: solid;
+  	margin:24px 0px;
+}
+
+sup { 
+	vertical-align:text-top; 
+	font-size:60%; 
+}
+
+
+@media only screen and (max-device-width: 640px) {
+	header{
+		padding:20px 30px;
+	}
+	#creditCard{
+		height:130px;
+	}
+	#title{
+		text-align: center;
+	}
+	#hero{
+		padding: 24px 30px 24px 30px;
+	}
+	#heroText {
+		width:75%;
+	  	font-size: 30px;	
+	}
+	.formField input{
+		width:100%;
+	}
+
+	#flexContainer{
+		display: flex;
+		flex-direction: column;
+	}	
+	button{
+		width: 100%
+	}
+}
+
+
+
+	

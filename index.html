@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html ng-app="interad-exercise">
+	<head>
+		<title>Interad&reg; Card Contest</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body ng-controller="mainController">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+
+		<div class="container">
+			<header>
+				<img id="logo" src="resources/interad_logo.png">
+			</header>
+			<div id="hero">
+				<img id="creditCard" src="resources/Sample_CreditCard_Sized.png">
+				<span id="heroText">What can the <span class="blackText">Interad<sup>&reg;</sup> card</span> do for you?</span>
+			</div>
+			<div id="title">
+				Simply complete the form below to enter the CashBack<sup>&reg;</sup> Contest for a chance to win<sup>**</sup> 1 of 10 trips worth <sup>$</sup>10,000.
+			</div>
+			<div id="formDiv">
+				<div id="flexContainer">
+					<div id="col1">
+						<div class="formField">
+							<label>Your Name &nbsp;<i>as it appears on the credit card</i></label>
+							<input placeholder="Name">
+						</div>
+						<div class="formField">
+							<label>Interad CashBack<sup>&reg;</sup> Credit Card Number</label>
+							<div id="inputCC">
+								<div>
+									<input placeholder="XXXX">&nbsp;-&nbsp;
+									<input placeholder="XXXX">&nbsp;-&nbsp;
+									<input placeholder="XXXX">&nbsp;-&nbsp;
+									<input placeholder="XXXX">
+								</div>
+							</div>	
+						</div>
+					</div>
+					<div id="col2">
+						<div class="formField">
+							<label>Email</label>
+							<input placeholder="Email">
+						</div>
+						<div class="formField" class="requiredField error">
+							<label ng-class="{redText:error}"><span class="redText">*</span>Daytime Phone Number</label>
+							<input ng-class="{redBorder:error}"placeholder="Phone Number" ng-model="phNum">
+							<span ng-show="error" class="errorMessage"><img id="error_icn" src="resources/error_icn.png">&nbsp;Missing Information</span>
+						</div>
+					</div>
+				</div>
+				<div class="formField">
+					<label>Why do you derserve this money?</label>
+					<textarea></textarea>
+				</div>
+				<hr>
+				<div id="businessCardField">
+					<div id="redChkBox">
+						<input type='checkbox' id="businessCardChkBox"/>
+						<label ng-click="showDiv = !showDiv" id="businessCardLabel" for="businessCardChkBox"></label>
+					</div>
+					<label for="businessCardChkBox">
+						I am registering an Interad<sup>&reg;</sup> Business card
+					</label>
+				</div>
+				<div ng-show="showDiv" id="businessCardWorkFlow">
+					<div class="formField">
+						<label>Business Name &nbsp;<i>as it appears on the credit card</i></label>
+						<input placeholder="Name">
+					</div>
+					<div id="businessOwnerConfirmationField">
+						<div id="blueChkBox">
+							<input type='checkbox' id="businessOwnerConfirmationChkBox"/>
+							<label id="businessOwnerConfirmationLabel" for="businessOwnerConfirmationChkBox"></label>
+						</div>
+						<div id="businessConditions" for="businessCardChkBox">
+							I certify that I am the owner of the business under which the business Interad Platinum card that I've entered (into this Contest) has been issued.
+
+							<p>Note: If an Interad Platinum card is selected as a potential winner, the business owner must provide identification satisfactory to the Sponsor confirming the business ownership. The prize will be awarded in the name of the business and the business owner(s) will determine who will participate in the prize.</p>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div id="rulesField">
+					<div id="chkBox">
+						<input type='checkbox' id="rulesChkBox"/>
+						<label id="rulesLabel" for="rulesChkBox"></label>
+					</div>
+					<div id="rulesText" for="rulesChkBox">
+						I have read and agree to <a href="#">Official Contest Rules and Regulations</a>.
+						<p>No purchase necessary. Contest starts April 1, 2013 and end May 31, 2013</p>
+					</div>
+				</div>
+				<div id="btnDiv" ng-click="checkError()">
+					<button>Submit Entry</button>
+				</div>
+				<hr>
+
+			</div>
+			<footer>
+				<div>
+				Interad Website, &copy;1994-2013
+				</div>
+				<p>
+				<a href="#">Privacy & Security</a>| <a href="#">Legal</a> | <a href="#">Accessibility </a>
+				</p>
+			</footer>
+		</div>
+	</body>
+</html> 
